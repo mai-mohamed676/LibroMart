@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "bookdetails";
+}
+
+<h1>bookdetails</h1>
+<div class="card" style="width:400px">
+  <img class="card-img-top" src="/images/@Model.image" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">@Model.Name</h4>
+    <p class="card-text">@Model.Description-@Model.price</p>
+    <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div>

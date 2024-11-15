@@ -1,0 +1,13 @@
+﻿@model coursewepapi.ViewModel.customerwithmessageandbranchlistviewmodel
+@{
+    ViewData["Title"] = "testviewmodel";
+}
+
+<h1>testviewmodel</h1>
+@Model.custname
+<select class="form-control">
+    @foreach(var item in Model.branches){
+        <option>@item</option>
+        }
+></select>
+@(Model.temp+10)
